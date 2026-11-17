@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Recipe Book</h1>
+        <p>Find and explore delicious recipes</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes">Search Recipes</a>
+        <a href="#recipeDetails">Recipe Details</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to Recipe Book</h2>
+            <p>
+                Discover different recipes and learn how to cook
+                delicious food at home.
+            </p>
+        </section>
+
+
+        <section id="recipes">
+
+            <h2>Search Recipes</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter recipe name or ingredient"
+            >
+
+            <button onclick="searchRecipes()">Search</button>
+
+            <button onclick="showAllRecipes()">Show All</button>
+
+            <div id="recipeList" class="recipe-list"></div>
+
+        </section>
+
+
+        <section id="recipeDetails">
+
+            <h2>Recipe Details</h2>
+
+            <p id="detailsMessage">
+                Select a recipe to see its details.
+            </p>
+
+            <div id="detailsContent"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Recipe Book  2026</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
